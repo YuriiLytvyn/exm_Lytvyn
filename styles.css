@@ -1,0 +1,25 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#3b82f6;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{font-family:Inter, Roboto, Arial, sans-serif; margin:0; background:linear-gradient(180deg,#071028, #0b1220); color:#e6eef8}
+.container{max-width:900px;margin:32px auto;padding:0 16px}
+.site-header{background:var(--card);padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.site-header h1{margin:0;font-size:20px}
+.nav{margin-top:8px}
+.nav a{color:var(--accent);margin-right:12px;text-decoration:none}
+.card{background:var(--glass);padding:18px;border-radius:12px;margin-top:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+.card h2{margin-top:0}
+.site-footer{padding:20px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03)}
+.created{font-size:14px;color:var(--muted)}
+.note{font-size:14px;color:var(--muted)}
+
+/* Responsive */
+@media(max-width:600px){.container{padding:0 12px}.site-header h1{font-size:18px}}
+
+/* Accessibility: focus styles */
+a:focus{outline:3px solid rgba(59,130,246,0.3);outline-offset:3px}
